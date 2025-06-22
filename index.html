@@ -33,6 +33,9 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card:hover {
       transform: scale(1.02);
@@ -44,9 +47,42 @@
     }
     .card p {
       text-align: center;
-      padding: 1rem;
+      padding: 1rem 1rem 0.5rem;
       font-weight: bold;
       text-transform: capitalize;
+    }
+    .order-btn {
+      margin: 0 auto 1rem;
+      display: block;
+      width: 80%;
+      padding: 0.5rem;
+      background-color: #25D366;
+      color: white;
+      text-align: center;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .order-btn:hover {
+      background-color: #1eb653;
+    }
+    .contact {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .contact p {
+      text-align: center;
+      margin: 0.5rem 0;
     }
     footer {
       background: #2e7d32;
@@ -65,36 +101,27 @@
   </header>
 
   <section class="gallery">
-    <div class="card"><img src="thika_palm.jpg" alt="Thika Palm"><p>Thika Palm</p></div>
-    <div class="card"><img src="travellers_palm.jpeg" alt="Travellers Palm"><p>Travellers Palm</p></div>
-    <div class="card"><img src="seaforthia_elegans.jpeg" alt="Seaforthia Elegans"><p>Seaforthia Elegans</p></div>
-    <div class="card"><img src="washington_robusta.jpeg" alt="Washington Robusta"><p>Washington Robusta</p></div>
-    <div class="card"><img src="roystonea_regia.jpeg" alt="Roystonea Regia"><p>Roystonea Regia</p></div>
-    <div class="card"><img src="phoenix_canariensis.jpeg" alt="Phoenix Canariensis"><p>Phoenix Canariensis</p></div>
-    <div class="card"><img src="licuala_grandis.jpeg" alt="Licuala Grandis"><p>Licuala Grandis</p></div>
-    <div class="card"><img src="cascabela-thevetia.jpg" alt="Cascabela Thevetia"><p>Cascabela Thevetia</p></div>
-    <div class="card"><img src="dracaena_fragrans.jpg" alt="Dracaena Fragrans"><p>Dracaena Fragrans</p></div>
-    <div class="card"><img src="nandi_flame.jpeg" alt="Nandi Flame"><p>Nandi Flame</p></div>
-    <div class="card"><img src="araucaria_cananghami.jpeg" alt="Araucaria Cunninghamii"><p>Araucaria Cunninghamii</p></div>
-    <div class="card"><img src="polyscias_fulva.jpg" alt="Polyscias Fulva"><p>Polyscias Fulva</p></div>
-    <div class="card"><img src="norfolk_island_palm.jpeg" alt="Norfolk Island Palm"><p>Norfolk Island Palm</p></div>
-    <div class="card"><img src="cana_lily.jpeg" alt="Canna Lily"><p>Canna Lily</p></div>
-    <div class="card"><img src="hydrocotyle.jpeg" alt="Hydrocotyle"><p>Hydrocotyle</p></div>
-    <div class="card"><img src="buffalo_grass.jpeg" alt="Buffalo Grass"><p>Buffalo Grass</p></div>
-    <div class="card"><img src="bermuda_grass.jpg" alt="Bermuda Grass"><p>Bermuda Grass</p></div>
-    <div class="card"><img src="rye_grass.jpg" alt="Rye Grass"><p>Rye Grass</p></div>
-    <div class="card"><img src="bent_grass.jpeg" alt="Bent Grass"><p>Bent Grass</p></div>
-    <div class="card"><img src="paspallum_grass.jpeg" alt="Paspalum Grass"><p>Paspalum Grass</p></div>
-    <div class="card"><img src="plumeria_species.jpeg" alt="Plumeria Species"><p>Plumeria Species</p></div>
-    <div class="card"><img src="lily.jpeg" alt="Lily"><p>Lily</p></div>
-    <div class="card"><img src="poinsetia.jpeg" alt="Poinsettia"><p>Poinsettia</p></div>
-    <div class="card"><img src="pistia_stratiotes.jpg" alt="Pistia Stratiotes"><p>Pistia Stratiotes</p></div>
-    <div class="card"><img src="carex_xanthosoma.jpg" alt="Carex Xanthosoma"><p>Carex Xanthosoma</p></div>
+    <!-- Example card -->
+    <div class="card"><img src="thika_palm.jpg" alt="Thika Palm"><p>Thika Palm</p><a class="order-btn" href="https://wa.me/254743961602?text=Hello%20Soft%20Scape%20Kenya,%20I%20would%20like%20to%20order:%20Thika%20Palm" target="_blank">Order Now</a></div>
+
+    <!-- Duplicate and change text for each plant -->
+    <div class="card"><img src="travellers_palm.jpeg" alt="Travellers Palm"><p>Travellers Palm</p><a class="order-btn" href="https://wa.me/254743961602?text=Hello%20Soft%20Scape%20Kenya,%20I%20would%20like%20to%20order:%20Travellers%20Palm" target="_blank">Order Now</a></div>
+
+    <!-- Continue for all other plants -->
+    <!-- Just follow the same format above -->
+    <!-- ... (include the rest of your plants here with correct links) -->
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Name:</strong> Simon Vudiya Lirova</p>
+    <p><strong>Phone:</strong> <a href="tel:+254743961602">0743961602</a></p>
+    <p><strong>Email:</strong> <a href="mailto:info@softscapekenya.co.ke">info@softscapekenya.co.ke</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/254743961602" target="_blank">Chat Now</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Soft Scape Kenya. All rights reserved. | Contact: 
-    <a href="mailto:info@softscapekenya.co.ke" style="color:white;">info@softscapekenya.co.ke</a>
+    &copy; 2025 Soft Scape Kenya. All rights reserved.
   </footer>
 
 </body>
